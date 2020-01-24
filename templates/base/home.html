@@ -1,0 +1,9 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<h2>Inicio de página</h2>
+<p>Bienvenido {% if user.is_authenticated %}{{ user.username }}{% else %}{% endif %} a la plataforma de MAR!</p>
+<p>
+    <strong>Usuarios registrados: </strong> {{ count }}
+</p>
+{% endblock %}

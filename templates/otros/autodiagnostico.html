@@ -1,0 +1,52 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <td>Pregunta</td>
+            <td>Si</td>
+            <td>No</td>
+            <td>En proceso</td>
+            <td>Porcentaje de avance</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>¿El oficial de cumplimiento elabora informes para la Junta Directiva en los cuales informa sobre le funcionamiento del sistema?</td>
+            <td>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="RadioSi" name="pregunta1" class="custom-control-input">
+                  <label class="custom-control-label" for="RadioSi"></label>
+                </div>
+            </td>
+            <td>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="RadioNo" name="pregunta1" class="custom-control-input">
+                  <label class="custom-control-label" for="RadioNo"></label>
+                </div>
+            </td>
+            <td>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="RadioAvance" name="pregunta1" class="custom-control-input">
+                  <label class="custom-control-label" for="RadioAvance"></label>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">%</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-outline-secondary float-right m-1">Cancelar</button>
+    <button type="button" class="btn btn-primary float-right m-1">Guardar</button>
+    <br>
+    <br>
+</div>
+{% endblock %}

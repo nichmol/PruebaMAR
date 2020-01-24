@@ -1,0 +1,46 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <td>Pregunta</td>
+            <td>Archivo guia</td>
+            <td>Evidencia</td>
+            <td>Avance</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>¿El oficial de cumplimiento elabora informes para la Junta Directiva en los cuales informa sobre le funcionamiento del sistema?</td>
+            <td>
+                <button type="button" class="btn btn-secondary">Descargar</button>
+            </td>
+            <td>
+                <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02">Archivo...</label>
+                    </div>
+                </div>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3">
+                    <input class="form-control" id="readOnlyInput" type="text" placeholder="100" readonly="">
+                    <div class="input-group-append">
+                        <span class="input-group-text">%</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-outline-secondary float-right m-1">Cancelar</button>
+    <button type="button" class="btn btn-primary float-right m-1">Guardar</button>
+    <br>
+    <br>
+</div>
+{% endblock %}
